@@ -28,10 +28,113 @@
  *  https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
  */
 
+/* Set background color and font size for the entire HTML document */
 html {
   font-size: 1.0rem;
+  background-color: #ede0d4;
 }
 
+/* Center the content on the page */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
+/* Styling for the container */
+.product-container {
+  display: flex;
+  flex-direction: column; /* Change to column to place buttons under the box */
+  background-color: white; /* Change box color to white */
+  color: black; /* Change text color to black */
+  width: 21.25rem; /* Set the width to match the image's width */
+  height: 36rem; /* Set the height to match the image's height */
+  border-radius: 0 0 0.9375rem 0.9375rem; /* Round bottom corners */
+}
+
+/* Styling for the title */
+.title {
+  font-size: 1rem; /* 28px in rem units */
+  text-align: left; /* Align text to the left */
+  color: lightcoral;
+  padding: .5rem; /* 10px in rem units */
+}
+
+/* Styling for the image */
+/* Styling for the image */
+.drink {
+  width: 100%; /* Make the image fill the container */
+
+  height: 30%; /* Make the image fill the container */
+  object-fit: contain; /* Maintain aspect ratio and center the image, cropping from the sides */
+  border-radius: 0.9375rem 0.9375rem 0 0; /* Round top corners */
+  object-fit: cover;
+}
+
+
+/* Styling for the product information */
+.product-info {
+  padding: 0.625rem; /* 10px in rem units */
+}
+
+/* Styling for the item name */
+.item-name {
+  font-size: 2rem; /* 24px in rem units */
+  align-items: center; /* Center items horizontally */
+  padding: .5rem;
+color: brown;
+}
+
+/* Styling for the description */
+.description {
+  font-size: 1.125rem; /* 18px in rem units */
+  padding-left: 2rem; /* Remove left padding for the list */
+  color:lightcoral;
+
+}
+
+/* Styling for the black boxes around the nested lists */
+.nested-box {
+  background-color: black;
+  padding: 0.3125rem; /* 5px in rem units */
+  border-radius: 0.3125rem; /* 5px in rem units */
+  margin-top: 0.3125rem; /* 5px in rem units */
+}
+
+/* Styling for the buttons container */
+.buttons-container {
+  display: flex;
+  flex-direction: row; /* Display buttons horizontally */
+  align-items: center;
+  justify-content: space-between; /* Space between buttons */
+  width: 100%; /* Ensure buttons stretch to full width */
+  margin-top: 1.25rem; /* 20px in rem units */
+}
+
+/* Styling for the "Buy Now" button */
+.buy-now-button {
+  background-color: brown; /* background color */
+  color: white;
+  padding: 0.625rem 1.25rem; /* 10px 20px in rem units */
+  font-size: 1.125rem; /* 18px in rem units */
+  flex: 0.97; /* Make the button grow to fill available space */
+  margin: 0 0.625rem; /* 10px in rem units, Add spacing between buttons */
+  cursor: pointer;
+  border-radius: 0.5rem; /* 5px in rem units */
+  
+}
+
+/* Styling for the "Buy Now" button on hover */
+.buy-now-button:hover {
+  background-color: lightcoral; /* Blue background color, same as the box */
+
+}
+.price{
+  color: brown;
+  font-size: 3rem;
+  font-weight: bold;
+  align-items: start;
+}
+
